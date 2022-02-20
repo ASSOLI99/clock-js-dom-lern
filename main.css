@@ -1,0 +1,67 @@
+html{
+    background-image: url(picture/manu-schwendener-DSwBHyWKiVw-unsplash.jpg);
+    background-size: cover;
+    text-align: center;
+    font-size: 10px;
+}
+body{
+    font-size: 2rem;
+
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+.clock{
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+
+}
+.clock-main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+.clock-main::after{
+    content: "";
+    background-color: black;
+    width: 3%;
+    height: 3%;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(-5px, -2px);
+    
+
+}
+
+
+
+.hand{
+    width: 50%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1,2.5,0.55,1);
+}
+.remove-transition{
+    transition: none;
+}
+.min-hand{
+    width: 40%;
+    left: 10%;   
+}
+.min-hand{
+    width: 35%;
+    left: 15%;   
+}
